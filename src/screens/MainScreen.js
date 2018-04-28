@@ -1,55 +1,44 @@
 import React, { Component } from "react";
-import { View, Text, StyleSheet, Picker } from "react-native";
+import { View, Text, StyleSheet, Platform } from "react-native";
 import { Entypo } from "@expo/vector-icons";
 
 import QuestionBox from "../components/QuestionBox";
+import CustomPickerIOS from "../components/CustomPickerIOS";
+import CustomPickerAndroid from "../components/CustomPickerAndroid";
 
-const values = ['Apple', 'Orange', 'Banana', 'Grape'];
+const values = ["Apple", "Orange", "Banana", "Grape"];
 
 class MainScreen extends Component {
   constructor(props) {
-    super(props)
-    this.updateValue = this.updateValue.bind(this)
-  }
+    super(props);
 
+    this.answer = this.answer.bind(this);
+  }
   state = {
-    selectedValue: null,
-    showingPicker: false
-  }
+    allowedToDrink: null,
+    answered: false
+  };
 
-  updateValue(value, index) {
-    this.setState({ selectedValue: value, showingPicker: false });
+  answer(allowedToDrink) {
+    this.setState({ answered: true, allowedToDrink });
+  }
+  renderPicker() {
+    return Platform.OS === "ios" ? (
+      <CustomPickerIOS data={values} containerStyle={styles.pickerContainer} />
+    ) : (
+      <CustomPickerAndroid
+        data={values}
+        containerStyle={styles.pickerContainer}
+      />
+    );
   }
 
   render() {
-    // const fruits = ['Apple', 'Orange', 'Banana', 'Grape'];
-    console.log(this.state)
+    const { answered, allowedToDrink } = this.state;
     return (
       <View style={styles.container}>
-        <QuestionBox />
-        <Picker
-           style={styles.picker}
-           itemStyle={styles.pickerItem}
-           testId='picker'
-           selectedValue={this.state.selectedValue}
-           onValueChange={this.updateValue}
-        >
-             <Picker.Item
-                 key={0}
-                 label="Choose a fruit"
-                 value={null}
-             />
-
-             {values.map(value => {
-                 return (
-                     <Picker.Item
-                         key={value}
-                         label={value}
-                         value={value}
-                     />
-                 );
-             })}
-           </Picker>
+        <QuestionBox {...this.state} answer={this.answer} />
+        {answered && allowedToDrink && this.renderPicker()}
       </View>
     );
   }
@@ -59,14 +48,11 @@ export default MainScreen;
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: "center",
+    flex: 1
+    // justifyContent: "center"
     // alignItems: "center"
   },
-  picker: {
-    backgroundColor: 'white'
-  },
-  pickerItem: {
-    height: 150
+  pickerContainer: {
+    marginTop: 10
   }
 });

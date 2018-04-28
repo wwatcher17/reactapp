@@ -1,0 +1,75 @@
+import React, { Component } from "react";
+import { View, Text, Picker, StyleSheet, TouchableOpacity } from "react-native";
+import { Entypo } from "@expo/vector-icons";
+
+class CustomPickerIOS extends Component {
+  constructor(props) {
+    super(props);
+    this.updateValue = this.updateValue.bind(this);
+  }
+  state = {
+    selectedValue: null,
+    showingPicker: false
+  };
+
+  updateValue(value, index) {
+    this.setState({ selectedValue: value, showingPicker: false });
+  }
+
+  render() {
+    const { selectedValue, showingPicker } = this.state;
+    const values = this.props.data;
+    return (
+      <View style={this.props.containerStyle}>
+        <TouchableOpacity
+          style={[
+            styles.subcontainer,
+            { borderBottomWidth: showingPicker ? 0 : 0.1 }
+          ]}
+          onPress={() => this.setState({ showingPicker: !showingPicker })}
+        >
+          <Text style={{ marginLeft: 30 }}>Fruit</Text>
+          {/* <Entypo name="select-arrows" color="#000000" size={18} /> */}
+          <Text style={{ marginRight: 30 }}>
+            {selectedValue || "Choose one"}
+          </Text>
+        </TouchableOpacity>
+        {showingPicker && (
+          <Picker
+            style={styles.picker}
+            itemStyle={styles.pickerItem}
+            testId="picker"
+            selectedValue={selectedValue}
+            onValueChange={this.updateValue}
+          >
+            <Picker.Item key={0} label="Choose one" value={null} />
+
+            {values.map(value => {
+              return <Picker.Item key={value} label={value} value={value} />;
+            })}
+          </Picker>
+        )}
+      </View>
+    );
+  }
+}
+
+export default CustomPickerIOS;
+
+const styles = StyleSheet.create({
+  picker: {
+    backgroundColor: "white",
+    borderBottomWidth: 0.1
+  },
+  pickerItem: {
+    height: 150
+  },
+  subcontainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    backgroundColor: "white",
+    height: 35,
+    borderTopWidth: 0.1
+  }
+});
