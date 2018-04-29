@@ -27,6 +27,11 @@
         "binaryPath": "bin/Exponent-2.5.1.app",
         "type": "ios.simulator",
         "name": "iPhone 7"
+      },
+      "android.emu.debug": {
+        "binaryPath": "./bin/Exponent-2.5.0.apk",
+        "type": "android.emulator",
+        "name": "Nexus_5X_API_27"
       }
     }
   },

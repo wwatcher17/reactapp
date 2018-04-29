@@ -8,16 +8,17 @@ class CustomPickerIOS extends Component {
     this.updateValue = this.updateValue.bind(this);
   }
   state = {
-    selectedValue: null,
     showingPicker: false
   };
 
   updateValue(value, index) {
-    this.setState({ selectedValue: value, showingPicker: false });
+    this.setState({ showingPicker: false });
+    this.props.updateValue(value);
   }
 
   render() {
-    const { selectedValue, showingPicker } = this.state;
+    const { showingPicker } = this.state;
+    const { selectedValue } = this.props;
     const values = this.props.data;
     return (
       <View style={this.props.containerStyle}>

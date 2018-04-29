@@ -13,22 +13,36 @@ class MainScreen extends Component {
     super(props);
 
     this.answer = this.answer.bind(this);
+    this.updateFruit = this.updateFruit.bind(this);
   }
   state = {
     allowedToDrink: null,
-    answered: false
+    answered: false,
+    fruit: null
   };
 
   answer(allowedToDrink) {
     this.setState({ answered: true, allowedToDrink });
   }
+
+  updateFruit(value) {
+    this.setState({ fruit: value });
+  }
+
   renderPicker() {
     return Platform.OS === "ios" ? (
-      <CustomPickerIOS data={values} containerStyle={styles.pickerContainer} />
+      <CustomPickerIOS
+        data={values}
+        containerStyle={styles.pickerContainer}
+        updateValue={this.updateFruit}
+        selectedValue={this.state.fruit}
+      />
     ) : (
       <CustomPickerAndroid
         data={values}
         containerStyle={styles.pickerContainer}
+        updateValue={this.updateFruit}
+        selectedValue={this.state.fruit}
       />
     );
   }

@@ -41,7 +41,7 @@ describe("MainScreen", () => {
   // it("should select Orange from picker on iOS", async () => {
   //   await element(by.id("yes_button")).tap();
   //   await element(by.id("picker_button_ios")).tap();
-  //   await element(by.id("Orange")).tap();
+  //   await element(by.id("picker")).setColumnToValue(0, "Apple");
   //   await expect(element(by.id("chosen_item_text"))).toHaveText("Orange");
   // });
 
@@ -64,3 +64,5 @@ describe("MainScreen", () => {
     await expect(element(by.id("login_screen"))).toBeVisible();
   });
 });
+
+//device.getPlatform() === 'ios'
