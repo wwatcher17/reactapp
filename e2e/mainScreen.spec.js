@@ -38,11 +38,16 @@ describe("MainScreen", () => {
     ).toBeVisible();
   });
 
+  it("should show an edit box after pressing yes button", async () => {
+    await element(by.id("yes_button")).tap();
+    await expect(element(by.id("edit_field"))).toBeVisible();
+  });
+
   // it("should select Orange from picker on iOS", async () => {
   //   await element(by.id("yes_button")).tap();
   //   await element(by.id("picker_button_ios")).tap();
   //   await element(by.id("picker")).setColumnToValue(0, "Apple");
-  //   await expect(element(by.id("chosen_item_text"))).toHaveText("Orange");
+  //   await expect(element(by.id("chosen_item_text"))).toHaveText("Apple");
   // });
 
   // it("should select Grape from picker on iOS", async () => {

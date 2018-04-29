@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { View, Text, StyleSheet, Platform } from "react-native";
+import { FormLabel, FormInput } from "react-native-elements";
 
 import QuestionBox from "../components/QuestionBox";
 import CustomPickerIOS from "../components/CustomPickerIOS";
@@ -13,6 +14,7 @@ class MainScreen extends Component {
 
     this.answer = this.answer.bind(this);
     this.updateFruit = this.updateFruit.bind(this);
+    this.renderForm = this.renderForm.bind(this);
   }
   state = {
     allowedToDrink: null,
@@ -28,22 +30,30 @@ class MainScreen extends Component {
     this.setState({ fruit: value });
   }
 
-  renderPicker() {
-    return Platform.OS === "ios" ? (
-      <CustomPickerIOS
-        data={values}
-        containerStyle={styles.pickerContainer}
-        updateValue={this.updateFruit}
-        selectedValue={this.state.fruit}
-      />
-    ) : (
-      <CustomPickerAndroid
-        data={values}
-        containerStyle={styles.pickerContainer}
-        updateValue={this.updateFruit}
-        selectedValue={this.state.fruit}
-      />
-    );
+  renderForm() {
+    return [
+      <View key="edit_field">
+        <FormLabel>Edit Box</FormLabel>
+        <FormInput onChangeText={() => {}} testID="edit_field" />
+      </View>,
+      Platform.OS === "ios" ? (
+        <CustomPickerIOS
+          data={values}
+          containerStyle={styles.pickerContainer}
+          updateValue={this.updateFruit}
+          selectedValue={this.state.fruit}
+          key="picker"
+        />
+      ) : (
+        <CustomPickerAndroid
+          data={values}
+          containerStyle={styles.pickerContainer}
+          updateValue={this.updateFruit}
+          selectedValue={this.state.fruit}
+          key="picker"
+        />
+      )
+    ];
   }
 
   render() {
@@ -51,7 +61,7 @@ class MainScreen extends Component {
     return (
       <View style={styles.container} testID="main_screen">
         <QuestionBox {...this.state} answer={this.answer} />
-        {answered && allowedToDrink && this.renderPicker()}
+        {answered && allowedToDrink && this.renderForm()}
       </View>
     );
   }
