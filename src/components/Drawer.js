@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
-import { Entypo } from "@expo/vector-icons";
+import Icon from "react-native-vector-icons/Entypo";
 
 class Drawer extends Component {
   constructor(props) {
@@ -21,7 +21,7 @@ class Drawer extends Component {
           onPress={() => navigation.navigate("home")}
           style={styles.menuButton}
         >
-          <Entypo name="home" color="#455A64" size={24} />
+          <Icon name="home" color="#455A64" size={24} />
           <Text style={styles.menuTitle}>Home</Text>
         </TouchableOpacity>
         <TouchableOpacity
@@ -29,7 +29,7 @@ class Drawer extends Component {
           style={styles.menuButton}
           testID="logout_button"
         >
-          <Entypo name="log-out" color="#455A64" size={24} />
+          <Icon name="log-out" color="#455A64" size={24} />
           <Text style={styles.menuTitle}>Sair</Text>
         </TouchableOpacity>
       </View>

@@ -5,7 +5,7 @@ import {
   StackNavigator
 } from "react-navigation";
 import { TouchableOpacity, View } from "react-native";
-import { EvilIcons } from "@expo/vector-icons";
+import Icon from "react-native-vector-icons/EvilIcons";
 import LoginScreen from "../screens/LoginScreen";
 import MainScreen from "../screens/MainScreen";
 import DrawerComponent from "../components/Drawer";
@@ -21,7 +21,7 @@ const DrawerButton = props => {
         }
         testID="drawer_button"
       >
-        <EvilIcons name="navicon" size={32} color="#FFFFFF" />
+        <Icon name="navicon" size={32} color="#FFFFFF" />
       </TouchableOpacity>
     </View>
   );

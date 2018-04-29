@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { View, Text, StyleSheet, Platform } from "react-native";
-import { Entypo } from "@expo/vector-icons";
 
 import QuestionBox from "../components/QuestionBox";
 import CustomPickerIOS from "../components/CustomPickerIOS";

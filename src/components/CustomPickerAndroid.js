@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { View, Text, Picker, StyleSheet, TouchableOpacity } from "react-native";
-import { Entypo } from "@expo/vector-icons";
+import Icon from "react-native-vector-icons/Entypo";
 
 class CustomPickerAndroid extends Component {
   constructor(props) {

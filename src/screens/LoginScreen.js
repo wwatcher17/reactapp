@@ -6,7 +6,6 @@ import {
   TouchableOpacity
 } from "react-native";
 import { FormLabel, FormInput, Button, Text } from "react-native-elements";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 class LoginScreen extends Component {
   constructor(props) {
