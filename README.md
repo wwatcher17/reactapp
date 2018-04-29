@@ -226,11 +226,12 @@ If this causes problems for you, you may want to try changing your terminal's co
 
 #### iOS
 
-1 - You need to have exp installed. Just run `npm i -g exp` if You don't.
-2 - Install the Detox-cli. Just run `npm install -g detox-cli`
-3 - Update brew. `brew update`
-4 - Run `brew tap wix/brew`, then `brew install applesimutils`
-5 - Go to your projects folder and run `npm install` or `yarn install`
-6 - Go to your projects folder on the command line and run `exp start`.
-7 - Open your iOS simulator (it needs to be the one specified in the package.json).
-8 - In another tab, go to your projects folder and run `yarn detox test`.
+1. You need to have exp installed. Just run `npm i -g exp` if You don't.
+2. Install the Detox-cli. Just run `npm install -g detox-cli`
+3. Update brew. `brew update`
+4. Run `brew tap wix/brew`, then `brew install applesimutils`
+5. Go to your projects folder and run `npm install` or `yarn install`
+6. In your projects folder, create a folder called bin, download the expo app in `https://dpq5q02fu5f55.cloudfront.net/Exponent-2.5.1.tar.gz`, unpack it, rename the folder adding .app and put inside the bin folder.
+6. Go to your projects folder on the command line and run `exp start`.
+7. Open your iOS simulator (it needs to be the one specified in the package.json).
+8. In another tab, go to your projects folder and run `yarn detox test`.
