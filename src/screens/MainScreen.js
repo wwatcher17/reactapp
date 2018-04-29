@@ -36,7 +36,7 @@ class MainScreen extends Component {
   render() {
     const { answered, allowedToDrink } = this.state;
     return (
-      <View style={styles.container}>
+      <View style={styles.container} testID="main_screen">
         <QuestionBox {...this.state} answer={this.answer} />
         {answered && allowedToDrink && this.renderPicker()}
       </View>

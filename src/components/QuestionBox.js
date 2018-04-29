@@ -6,17 +6,19 @@ const QuestionBox = ({ allowedToDrink, answered, answer }) => {
   if (!answered) {
     return (
       <Card wrapperStyle={styles.container}>
-        <Text h4 style={styles.questionText}>
-          Are you at least 18 years old?{" "}
+        <Text h4 style={styles.questionText} testID="age_question">
+          Are you at least 18 years old?
         </Text>
         <View style={styles.buttonsContainer}>
           <Button
             title="Yes"
+            testID="yes_button"
             icon={{ name: "thumb-up" }}
             buttonStyle={[styles.button, { backgroundColor: "#2ecc71" }]}
             onPress={() => answer(true)}
           />
           <Button
+            testID="no_button"
             title="No"
             icon={{ name: "thumb-down" }}
             buttonStyle={[styles.button, { backgroundColor: "#d35400" }]}
@@ -30,6 +32,7 @@ const QuestionBox = ({ allowedToDrink, answered, answer }) => {
   return (
     <Card wrapperStyle={styles.container}>
       <Text
+        testID="permission_text"
         style={[
           styles.answerText,
           { color: allowedToDrink ? "#27ae60" : "#c0392b" }

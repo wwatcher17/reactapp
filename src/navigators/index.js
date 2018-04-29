@@ -19,6 +19,7 @@ const DrawerButton = props => {
         onPress={() =>
           routeIndex === 0 ? navigate("DrawerOpen") : navigate("DrawerClose")
         }
+        testID="drawer_button"
       >
         <EvilIcons name="navicon" size={32} color="#FFFFFF" />
       </TouchableOpacity>

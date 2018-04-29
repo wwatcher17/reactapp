@@ -28,14 +28,21 @@ class CustomPickerAndroid extends Component {
         <Picker
           style={styles.picker}
           itemStyle={styles.pickerItem}
-          testId="picker"
+          testID="picker"
           selectedValue={selectedValue}
           onValueChange={this.updateValue}
         >
           <Picker.Item key={0} label="Choose one" value={null} />
 
           {values.map(value => {
-            return <Picker.Item key={value} label={value} value={value} />;
+            return (
+              <Picker.Item
+                key={value}
+                label={value}
+                value={value}
+                testID={value}
+              />
+            );
           })}
         </Picker>
       </View>

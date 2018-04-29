@@ -20,27 +20,39 @@ class LoginScreen extends Component {
 
   render() {
     return (
-      <KeyboardAvoidingView style={styles.container} behavior="padding" enabled>
+      <KeyboardAvoidingView
+        style={styles.container}
+        behavior="padding"
+        enabled
+        testID="login_screen"
+      >
         <View style={styles.subcontainer}>
           <View style={styles.titleView}>
-            <Text h1>ReactApp</Text>
+            <Text h1 testID="title">
+              ReactApp
+            </Text>
           </View>
           <View>
             <FormLabel>Email</FormLabel>
-            <FormInput onChangeText={() => {}} />
+            <FormInput onChangeText={() => {}} testID="email_field" />
           </View>
           <View>
             <FormLabel>Password</FormLabel>
-            <FormInput onChangeText={() => {}} secureTextEntry />
+            <FormInput
+              onChangeText={() => {}}
+              secureTextEntry
+              testID="password_field"
+            />
           </View>
           <Button
+            testID="login_button"
             title="Login"
             buttonStyle={styles.buttonStyle}
             onPress={this.login}
             icon={{ name: "input", color: "#ffffff" }}
           />
         </View>
-        <View style={styles.textView}>
+        <View style={styles.textView} testID="sign_up_text">
           <Text style={styles.signupText}>Don't have an account yet?</Text>
           <TouchableOpacity>
             <Text style={styles.link}>Signup</Text>

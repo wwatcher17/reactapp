@@ -27,10 +27,11 @@ class CustomPickerIOS extends Component {
             { borderBottomWidth: showingPicker ? 0 : 0.1 }
           ]}
           onPress={() => this.setState({ showingPicker: !showingPicker })}
+          testID="picker_button_ios"
         >
           <Text style={{ marginLeft: 30 }}>Fruit</Text>
           {/* <Entypo name="select-arrows" color="#000000" size={18} /> */}
-          <Text style={{ marginRight: 30 }}>
+          <Text style={{ marginRight: 30 }} testID="chosen_item_text">
             {selectedValue || "Choose one"}
           </Text>
         </TouchableOpacity>
@@ -38,14 +39,21 @@ class CustomPickerIOS extends Component {
           <Picker
             style={styles.picker}
             itemStyle={styles.pickerItem}
-            testId="picker"
+            testID="picker"
             selectedValue={selectedValue}
             onValueChange={this.updateValue}
           >
             <Picker.Item key={0} label="Choose one" value={null} />
 
             {values.map(value => {
-              return <Picker.Item key={value} label={value} value={value} />;
+              return (
+                <Picker.Item
+                  key={value}
+                  label={value}
+                  value={value}
+                  testID={value}
+                />
+              );
             })}
           </Picker>
         )}

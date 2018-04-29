@@ -24,7 +24,11 @@ class Drawer extends Component {
           <Entypo name="home" color="#455A64" size={24} />
           <Text style={styles.menuTitle}>Home</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={this.logout} style={styles.menuButton}>
+        <TouchableOpacity
+          onPress={this.logout}
+          style={styles.menuButton}
+          testID="logout_button"
+        >
           <Entypo name="log-out" color="#455A64" size={24} />
           <Text style={styles.menuTitle}>Sair</Text>
         </TouchableOpacity>
