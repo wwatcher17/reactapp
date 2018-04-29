@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		71lFfSxx4LVTnBU4I1zM1aNdRzg=
+		x7HH3FcOXBQi0FxZWi8iVQg39iI=
 		</data>
 		<key>Entypo.ttf</key>
 		<data>
@@ -27,47 +27,6 @@
 		<key>Foundation.ttf</key>
 		<data>
 		SyvObHkkk6SlcWtv7C2+/olJLD8=
-		</data>
-		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
-		<data>
-		PM04ohL+tpX8HYsmZndzNiahogM=
-		</data>
-		<key>Frameworks/IDEBundleInjection.framework/Info.plist</key>
-		<data>
-		yVEF+IAFxPMrETjk62TYUsSZZoY=
-		</data>
-		<key>Frameworks/IDEBundleInjection.framework/_CodeSignature/CodeResources</key>
-		<data>
-		zoD3Qa8gxI+Cn8eWli9Qhwj3hO0=
-		</data>
-		<key>Frameworks/IDEBundleInjection.framework/version.plist</key>
-		<data>
-		AKh1zJiXarm2j6t4HiBBfLajCzk=
-		</data>
-		<key>Frameworks/XCTest.framework/Info.plist</key>
-		<data>
-		THfQZgzkqYfCF+1a6Qiiyg4PBvk=
-		</data>
-		<key>Frameworks/XCTest.framework/XCTest</key>
-		<data>
-		kcj25XRrQvP/qx+D4sgQlfuUVpI=
-		</data>
-		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
-		<data>
-		3CgG/k5wQrc9AU6lVjrD6VTdHUo=
-		</data>
-		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			TuBj57ZP6zBqcL9HttO2Rucaw9E=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/XCTest.framework/version.plist</key>
-		<data>
-		4NEkyhJ9SrLJFKYhtHIBA6JBUFk=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -93,26 +52,6 @@
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
-		<key>PlugIns/reactappTests.xctest.dSYM/Contents/Info.plist</key>
-		<data>
-		X8ovmuDv7p+vIp6d2+eMLpKRWPI=
-		</data>
-		<key>PlugIns/reactappTests.xctest.dSYM/Contents/Resources/DWARF/reactappTests</key>
-		<data>
-		G94t1GWlq6BSWsRZIcrNKX8NpKU=
-		</data>
-		<key>PlugIns/reactappTests.xctest/Info.plist</key>
-		<data>
-		1hA/erHyW32eFRnlyhMzhGMQdnE=
-		</data>
-		<key>PlugIns/reactappTests.xctest/_CodeSignature/CodeResources</key>
-		<data>
-		9fWOjSLuPb1OJbewGQyHq3cT0Xc=
-		</data>
-		<key>PlugIns/reactappTests.xctest/reactappTests</key>
-		<data>
-		6T6HIbogLNoSIkC8FPnh6YbEJGE=
-		</data>
 		<key>SimpleLineIcons.ttf</key>
 		<data>
 		n/uBpaEREuKS8swyPphIa61ZdZk=
@@ -128,11 +67,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			71lFfSxx4LVTnBU4I1zM1aNdRzg=
+			x7HH3FcOXBQi0FxZWi8iVQg39iI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Gm9MPC1wAFnuH3d2YIEs7P+Rlzv0+TDkd3xHxA978Dw=
+			pkrA3viPM+16af7bm+OtrtE6p/MucRpw10eaCDAI4VI=
 			</data>
 		</dict>
 		<key>Entypo.ttf</key>
@@ -190,107 +129,6 @@
 			fh3QPdTOkLZYBSVUzXRZ3xZxZxc4mlUvpMbVal+JM+Y=
 			</data>
 		</dict>
-		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PM04ohL+tpX8HYsmZndzNiahogM=
-			</data>
-			<key>hash2</key>
-			<data>
-			skWCjbSCq4Do0CfB9M9H/oIKb8E6u811RNZ3C4RCgr8=
-			</data>
-		</dict>
-		<key>Frameworks/IDEBundleInjection.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			yVEF+IAFxPMrETjk62TYUsSZZoY=
-			</data>
-			<key>hash2</key>
-			<data>
-			9CAwBh/gVNHbUVChmC57vhLKF/T8yHQUP8JfXzX4IrA=
-			</data>
-		</dict>
-		<key>Frameworks/IDEBundleInjection.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			zoD3Qa8gxI+Cn8eWli9Qhwj3hO0=
-			</data>
-			<key>hash2</key>
-			<data>
-			NhL3FSmi+ubMNRzjMlAyyh6e9hsdJvc1F6dCLhXfQXo=
-			</data>
-		</dict>
-		<key>Frameworks/IDEBundleInjection.framework/version.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			AKh1zJiXarm2j6t4HiBBfLajCzk=
-			</data>
-			<key>hash2</key>
-			<data>
-			4ReRxHthIWbMqGoVvBSVgDBXj1VsdaAW3Ugx/lWXjnM=
-			</data>
-		</dict>
-		<key>Frameworks/XCTest.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			THfQZgzkqYfCF+1a6Qiiyg4PBvk=
-			</data>
-			<key>hash2</key>
-			<data>
-			rCvsePGwevZyhF3ZQyq8mLkMpOpOa2bePzPRXJ5zAdQ=
-			</data>
-		</dict>
-		<key>Frameworks/XCTest.framework/XCTest</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			kcj25XRrQvP/qx+D4sgQlfuUVpI=
-			</data>
-			<key>hash2</key>
-			<data>
-			9U8DN2XC2S+3i8hOw4JwkbJ5Umq/khonj/aFSTUu5dM=
-			</data>
-		</dict>
-		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3CgG/k5wQrc9AU6lVjrD6VTdHUo=
-			</data>
-			<key>hash2</key>
-			<data>
-			3510nfxvxFwFf3lY60q05h559sn/b/FiXKLJJnn5cHw=
-			</data>
-		</dict>
-		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			TuBj57ZP6zBqcL9HttO2Rucaw9E=
-			</data>
-			<key>hash2</key>
-			<data>
-			89RGkjZaKuewYnjpzwhIswhqfrU8+pcEXqM/DHVrUmo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/XCTest.framework/version.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4NEkyhJ9SrLJFKYhtHIBA6JBUFk=
-			</data>
-			<key>hash2</key>
-			<data>
-			npuwVsQMT6N9VGE0YqH9a729MzPY+LnokIqdklNFhIs=
-			</data>
-		</dict>
 		<key>Ionicons.ttf</key>
 		<dict>
 			<key>hash</key>
@@ -333,61 +171,6 @@
 			<key>hash2</key>
 			<data>
 			NC9CWcIUkNdDyFv9XLIgM5voHcU7RU+sU2mnqmpBMI4=
-			</data>
-		</dict>
-		<key>PlugIns/reactappTests.xctest.dSYM/Contents/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			X8ovmuDv7p+vIp6d2+eMLpKRWPI=
-			</data>
-			<key>hash2</key>
-			<data>
-			/IF/OzKAwtIyUe2LPdZsYisoL3mxjPxBlCF576sVtmc=
-			</data>
-		</dict>
-		<key>PlugIns/reactappTests.xctest.dSYM/Contents/Resources/DWARF/reactappTests</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			G94t1GWlq6BSWsRZIcrNKX8NpKU=
-			</data>
-			<key>hash2</key>
-			<data>
-			R1+pil/X+plrnKDyXC3uBnwit5AniI5cPV2rs/GdWZQ=
-			</data>
-		</dict>
-		<key>PlugIns/reactappTests.xctest/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1hA/erHyW32eFRnlyhMzhGMQdnE=
-			</data>
-			<key>hash2</key>
-			<data>
-			2pmZLh5CgY/72q+vl772chg4uMMgdC425cGc7r02Fd0=
-			</data>
-		</dict>
-		<key>PlugIns/reactappTests.xctest/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9fWOjSLuPb1OJbewGQyHq3cT0Xc=
-			</data>
-			<key>hash2</key>
-			<data>
-			Gpb5LijIyk/u+nbIsIszFsFswavo5Yd6g6l4UvHZyME=
-			</data>
-		</dict>
-		<key>PlugIns/reactappTests.xctest/reactappTests</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6T6HIbogLNoSIkC8FPnh6YbEJGE=
-			</data>
-			<key>hash2</key>
-			<data>
-			pgqJSM8Sw8xgH2W5lZIBnfGwPlXc1vXR8ddzcIvQnxE=
 			</data>
 		</dict>
 		<key>SimpleLineIcons.ttf</key>
