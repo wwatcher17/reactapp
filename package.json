@@ -22,10 +22,12 @@
   "detox": {
     "configurations": {
       "ios.sim": {
-        "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/reactapp.app",
-        "build": "xcodebuild -project ios/reactapp.xcodeproj -scheme reactapp -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
+        "binaryPath":
+          "ios/build/Build/Products/Debug-iphonesimulator/reactapp.app",
+        "build":
+          "xcodebuild -project ios/reactapp.xcodeproj -scheme reactapp -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
         "type": "ios.simulator",
-        "name": "iPhone 7"
+        "name": "iPhone 6"
       },
       "android.emu.debug": {
         "binaryPath": "./bin/Exponent-2.5.0.apk",
@@ -36,7 +38,8 @@
   },
   "dependencies": {
     "react": "16.3.1",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-27.0.0.tar.gz",
+    "react-native":
+      "https://github.com/expo/react-native/archive/sdk-27.0.0.tar.gz",
     "react-native-elements": "^0.19.1",
     "react-native-vector-icons": "^4.6.0",
     "react-navigation": "^1.5.11"

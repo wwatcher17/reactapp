@@ -1,4 +1,4 @@
-const { reloadApp } = require("detox-expo-helpers");
+// const { reloadApp } = require("detox-expo-helpers");
 
 describe("LoginScreen", () => {
   function timeout(ms) {
@@ -6,9 +6,9 @@ describe("LoginScreen", () => {
   }
 
   beforeEach(async () => {
-    // await device.reloadReactNative();
-    await reloadApp();
-    await timeout(4000); //I had to put this delay here because of an issue with detox and the expo library
+    await device.reloadReactNative();
+    // await reloadApp();
+    // await timeout(4000); //I had to put this delay here because of an issue with detox and the expo library
     //the issue is described here: https://github.com/expo/with-detox-tests/issues/2
   });
 
