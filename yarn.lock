@@ -1593,9 +1593,9 @@ detox-server@^7.0.0:
     npmlog "^4.0.2"
     ws "^1.1.0"
 
-detox@^7.3.4:
-  version "7.3.4"
-  resolved "https://registry.yarnpkg.com/detox/-/detox-7.3.4.tgz#ac94400a67b5d0f138b4975d59930cbe61168b31"
+detox@^7.3.7:
+  version "7.3.7"
+  resolved "https://registry.yarnpkg.com/detox/-/detox-7.3.7.tgz#257a2bdb805b98a5c9c001e4b30a16bf72ce7ba6"
   dependencies:
     child-process-promise "^2.2.0"
     commander "^2.15.1"

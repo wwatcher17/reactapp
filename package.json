@@ -4,7 +4,7 @@
   "private": true,
   "devDependencies": {
     "babel-preset-react-native-stage-0": "^1.0.1",
-    "detox": "^7.3.4",
+    "detox": "^7.3.7",
     "jest": "20.1.0-echo.1",
     "jest-react-native": "^18.0.0",
     "mocha": "^5.1.1",
