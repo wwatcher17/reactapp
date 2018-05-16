@@ -28,14 +28,20 @@ describe("MainScreen", () => {
 
   it("should show permission text after pressing yes button", async () => {
     await element(by.id("yes_button")).tap();
-    await expect(element(by.label("You are allowed to drink"))).toBeVisible();
+    // await expect(element(by.label("You are allowed to drink"))).toBeVisible();
+    await expect(element(by.id("permission_text"))).toHaveText(
+      "You are allowed to drink"
+    );
   });
 
   it("should show permission text after pressing no button", async () => {
     await element(by.id("no_button")).tap();
-    await expect(
-      element(by.label("You are not allowed to drink"))
-    ).toBeVisible();
+    // await expect(
+    //   element(by.label("You are not allowed to drink"))
+    // ).toBeVisible();
+    await expect(element(by.id("permission_text"))).toHaveText(
+      "You are not allowed to drink"
+    );
   });
 
   it("should show an edit box after pressing yes button", async () => {
@@ -59,8 +65,12 @@ describe("MainScreen", () => {
 
   it("should show a picker", async () => {
     await element(by.id("yes_button")).tap();
-    await element(by.id("picker_button_ios")).tap();
-    await expect(element(by.type("UIPickerView"))).toBeVisible();
+    if (device.getPlatform() === "ios") {
+      await element(by.id("picker_button_ios")).tap();
+      await expect(element(by.type("UIPickerView"))).toBeVisible();
+    } else {
+      await element(by.id("picker")).tap();
+    }
   });
 
   it("should Logout", async () => {
