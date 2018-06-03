@@ -1,15 +1,13 @@
-const detox = require("detox");
-const config = require("../package.json").detox;
+const detox = require('detox');
+const config = require('../package.json').detox;
 
-before(async () => {
-  try {
-    await detox.init(config);
-  } catch (err) {
-    console.log(err);
-    throw err;
-  }
+// Set the default test timeout of 120s
+jest.setTimeout(120000);
+
+beforeAll(async () => {
+  await detox.init(config);
 });
 
-after(async () => {
+afterAll(async () => {
   await detox.cleanup();
 });
